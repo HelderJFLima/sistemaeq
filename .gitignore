@@ -1,0 +1,5 @@
+*.txt
+*.vcxproj*
+*.sln
+.vs/
+Debug/
