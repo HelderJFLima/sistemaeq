@@ -447,16 +447,12 @@ Vetor* soluciona_sistema(Matriz *mat)               // Algoritmo de Gauss
     {
         p = cria_vetor(mat->lin);
 
-        p->n = mat->lin;
-
         for (i = p->n - 1; i >= 0; i--)
         {
             p->v[i] = mat->v[i][mat->col - 1];
 
-            for (j = i + 1; j < mat->col; j++)
+            for (j = i + 1; j < mat->col - 1; j++)
                 p->v[i] -= mat->v[i][j] * p->v[j];
-
-            p->v[i] /= mat->v[i][i];
         }
     }
 

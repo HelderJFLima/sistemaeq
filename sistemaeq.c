@@ -1,5 +1,5 @@
 // Programa para resolver sistemas de equações pelo método de Gauss
-// É preciso que o número de equações seja igual o de incógnitas.
+// É preciso que o número de equações seja igual ao de incógnitas.
 
 #include "funcsistemaeq.h"
 
